@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: #ece4d3;
+  color: #1c1712;
+}
+
+::selection {
+  background-color: #c31f26;
+  color: #f7f2e6;
+}
+
+/* Reader is a dedicated dark surface — long reading sessions, not chrome */
+.reader-scope {
+  color-scheme: dark;
+  background-color: #121212;
+  color: #ece4d3;
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.hairline-texture {
+  background-image: radial-gradient(circle, rgba(28, 23, 18, 0.06) 1px, transparent 1px);
+  background-size: 4px 4px;
+}
